@@ -916,7 +916,7 @@ public class OsiamConnector {
                 return authServiceEndpoint;
             }
             if (!Strings.isNullOrEmpty(combinedEndpoint)) {
-                return appendSlash(combinedEndpoint) + "osiam-auth-server";
+                return appendSlash(combinedEndpoint) /* + "osiam-auth-server" */;
             }
             return null;
         }
@@ -926,7 +926,7 @@ public class OsiamConnector {
                 return resourceServiceEndpoint;
             }
             if (!Strings.isNullOrEmpty(combinedEndpoint)) {
-                return appendSlash(combinedEndpoint) + "osiam-resource-server";
+                return appendSlash(combinedEndpoint) /* + "osiam-resource-server" */;
             }
             return null;
         }
